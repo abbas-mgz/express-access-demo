@@ -8,7 +8,7 @@ Role-Based Access Control (RBAC) is a method of regulating access to resources b
 
 ## 📦 Library Used
 
-This project uses [express-access](https://github.com/express-access/express-access) (v1.4.1), a powerful middleware for Express.js that provides:
+This project uses [express-access](https://github.com/bahador-r/express-access) (v1.4.1), a powerful middleware for Express.js that provides:
 
 - Simple and flexible role-based access control
 - Database-agnostic design
@@ -17,7 +17,7 @@ This project uses [express-access](https://github.com/express-access/express-acc
 - Granular permission control
 - Middleware-based implementation
 
-To learn more about express-access, visit their [GitHub repository](https://github.com/express-access/express-access).
+To learn more about express-access, visit their [GitHub repository](hhttps://github.com/bahador-r/express-access).
 
 ## 🚀 Features
 
