@@ -17,7 +17,7 @@ This project uses [express-access](https://github.com/bahador-r/express-access) 
 - Granular permission control
 - Middleware-based implementation
 
-To learn more about express-access, visit their [GitHub repository](hhttps://github.com/bahador-r/express-access).
+To learn more about express-access, visit their [GitHub repository](https://github.com/bahador-r/express-access).
 
 ## 🚀 Features
 
