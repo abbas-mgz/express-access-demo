@@ -1,0 +1,99 @@
+{
+  "info": {
+    "_postman_id": "b1e1e1e1-1234-5678-9abc-def012345678",
+    "name": "express-access-demo RBAC",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Posts (as Reader)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "x-user-role", "value": "reader" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/posts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["posts"]
+        }
+      }
+    },
+    {
+      "name": "Create Post (as Reader)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "x-user-role", "value": "reader" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Test Post\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/posts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["posts"]
+        }
+      }
+    },
+    {
+      "name": "Create Post (as Editor)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "x-user-role", "value": "editor" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Test Post\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/posts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["posts"]
+        }
+      }
+    },
+    {
+      "name": "Delete Post (as Editor)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          { "key": "x-user-role", "value": "editor" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/posts/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["posts", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Post (as Admin)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          { "key": "x-user-role", "value": "admin" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/posts/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["posts", "1"]
+        }
+      }
+    }
+  ]
+} 
